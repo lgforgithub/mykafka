@@ -1,5 +1,6 @@
 FROM confluent/zookeeper
 MAINTAINER lg
+USER [root]
 RUN rm -rf /usr/local/bin/zk-docker.sh
 #ADD /root/zk-docker.sh /usr/local/bin/zk-docker.sh
 RUN curl --location --silent --insecure --output /usr/local/bin/zk-docker.sh https://raw.githubusercontent.com/lgforgithub/mykafka/master/zk-docker.sh
